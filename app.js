@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < cardArray.length; i++) { //recorremos el array con las cartas
       const card = document.createElement('img')
 
-      card.setAttribute('src', 'images/fondo.jpg') //etiqueta img con source
+      card.setAttribute('src', 'images/fondo.png') //etiqueta img con source
 
       card.setAttribute('data-id', i) //Vamos asignando los id desde 0
       card.addEventListener('click', flipCard) //evento que llama a flipCard (mas abajo)
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if(optionOneId == optionTwoId) { //Caso en el que son iguales
 
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
+      cards[optionOneId].setAttribute('src', 'images/fondo.png')
+      cards[optionTwoId].setAttribute('src', 'images/fondo.png')
 
-      cards[optionOneId].setAttribute('src', 'images/fondo.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/fondo.jpg')
+      cards[optionOneId].setAttribute('src', 'images/fondo.png')
+      cards[optionTwoId].setAttribute('src', 'images/fondo.png')
 
       alert('Has hecho click en la misma imagen!!!')
     }
@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
       cardsWon.push(cardsChosen)
     } else { //Son distintas
 
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
+      cards[optionOneId].setAttribute('src', 'images/fondo.png')
+      cards[optionTwoId].setAttribute('src', 'images/fondo.png')
 
-      cards[optionOneId].setAttribute('src', 'images/fondo.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/fondo.jpg')
+      cards[optionOneId].setAttribute('src', 'images/fondo.png')
+      cards[optionTwoId].setAttribute('src', 'images/fondo.png')
 
       alert('nah bro siguen intentandolo')
     }
