@@ -71,7 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) { //recorremos el array con las cartas
       const card = document.createElement('img')
+<<<<<<< HEAD
       card.setAttribute('src', 'images/linus.jpeg') //etiqueta img con source
+=======
+      card.setAttribute('src', 'images/blank.jpg') //etiqueta img con source
+>>>>>>> parent of fb49e14 (mod img fondo)
       card.setAttribute('data-id', i) //Vamos asignando los id desde 0
       card.addEventListener('click', flipCard) //evento que llama a flipCard (mas abajo)
       grid.appendChild(card)
@@ -85,8 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1]
     
     if(optionOneId == optionTwoId) { //Caso en el que son iguales
+<<<<<<< HEAD
       cards[optionOneId].setAttribute('src', 'images/linus.jpeg')
       cards[optionTwoId].setAttribute('src', 'images/linus.jpeg')
+=======
+      cards[optionOneId].setAttribute('src', 'images/blank.jpg')
+      cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
+>>>>>>> parent of fb49e14 (mod img fondo)
       alert('Has hecho click en la misma imagen!!!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) { //Son iguales
@@ -98,8 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
     } else { //Son distintas
+<<<<<<< HEAD
       cards[optionOneId].setAttribute('src', 'images/linus.jpeg')
       cards[optionTwoId].setAttribute('src', 'images/linus.jpeg')
+=======
+      cards[optionOneId].setAttribute('src', 'images/blank.jpg')
+      cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
+>>>>>>> parent of fb49e14 (mod img fondo)
       alert('nah bro siguen intentandolo')
     }
     //Vaciamos los arrays usados para comparar los elegidos
